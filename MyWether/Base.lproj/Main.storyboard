@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyWether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OG-9Q-mN7">
+                                <rect key="frame" x="159" y="70" width="57.5" height="35"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qh-FZ-EXS">
+                                <rect key="frame" x="162.5" y="110" width="50" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svu-fx-TLD">
+                                <rect key="frame" x="141.5" y="275" width="93" height="116"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="q1f-KN-KbM">
+                                <rect key="frame" x="147.5" y="125" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="EGQ-mG-VNd"/>
+                                    <constraint firstAttribute="width" secondItem="q1f-KN-KbM" secondAttribute="height" multiplier="1:1" id="O0L-e1-hhj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tomorrow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hG-6F-gjJ">
+                                <rect key="frame" x="146.5" y="454.5" width="83.5" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhl-Ni-TMP">
+                                <rect key="frame" x="196" y="474.5" width="34" height="40"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B8-Ng-ahG">
+                                <rect key="frame" x="234.5" y="285" width="24" height="35"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy" translatesAutoresizingMaskIntoConstraints="NO" id="82x-ch-hax">
+                                <rect key="frame" x="146.5" y="474.5" width="39.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="82x-ch-hax" secondAttribute="height" multiplier="1:1" id="aLm-lH-0T8"/>
+                                    <constraint firstAttribute="height" constant="40" id="tq2-Sj-zB3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMc-K7-siK">
+                                <rect key="frame" x="230" y="479.5" width="12" height="16"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eJ-rz-g2m">
+                                <rect key="frame" x="158.5" y="205" width="58" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.20784313725490197" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2eJ-rz-g2m" firstAttribute="top" secondItem="q1f-KN-KbM" secondAttribute="bottom" id="06s-FL-09R"/>
+                            <constraint firstItem="Nhl-Ni-TMP" firstAttribute="trailing" secondItem="6hG-6F-gjJ" secondAttribute="trailing" id="4Js-PI-4f1"/>
+                            <constraint firstItem="svu-fx-TLD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4rk-Sa-YNc"/>
+                            <constraint firstItem="8OG-9Q-mN7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BKS-y0-kob"/>
+                            <constraint firstItem="svu-fx-TLD" firstAttribute="top" secondItem="2eJ-rz-g2m" secondAttribute="bottom" constant="50" id="EeX-wV-0mB"/>
+                            <constraint firstItem="Nhl-Ni-TMP" firstAttribute="top" secondItem="82x-ch-hax" secondAttribute="top" id="JAo-Er-5ES"/>
+                            <constraint firstItem="3B8-Ng-ahG" firstAttribute="leading" secondItem="svu-fx-TLD" secondAttribute="trailing" id="K7s-Ie-XOh"/>
+                            <constraint firstItem="5Qh-FZ-EXS" firstAttribute="top" secondItem="8OG-9Q-mN7" secondAttribute="bottom" constant="5" id="MlV-1j-Ikv"/>
+                            <constraint firstItem="6hG-6F-gjJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OIZ-Iy-iYN"/>
+                            <constraint firstItem="q1f-KN-KbM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PDZ-bT-IXa"/>
+                            <constraint firstItem="2eJ-rz-g2m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PLv-eP-TAw"/>
+                            <constraint firstItem="5Qh-FZ-EXS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QVG-yW-l7P"/>
+                            <constraint firstItem="zMc-K7-siK" firstAttribute="leading" secondItem="Nhl-Ni-TMP" secondAttribute="trailing" id="cDN-MG-Nh1"/>
+                            <constraint firstItem="svu-fx-TLD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d4g-KP-AFc"/>
+                            <constraint firstItem="82x-ch-hax" firstAttribute="bottom" secondItem="Nhl-Ni-TMP" secondAttribute="bottom" id="hu8-Fq-voK"/>
+                            <constraint firstItem="8OG-9Q-mN7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="kY8-z5-qok"/>
+                            <constraint firstItem="3B8-Ng-ahG" firstAttribute="top" secondItem="svu-fx-TLD" secondAttribute="top" constant="10" id="klC-cs-4gD"/>
+                            <constraint firstItem="82x-ch-hax" firstAttribute="top" secondItem="6hG-6F-gjJ" secondAttribute="bottom" id="qIF-5o-aef"/>
+                            <constraint firstItem="6hG-6F-gjJ" firstAttribute="top" secondItem="svu-fx-TLD" secondAttribute="bottom" constant="63.5" id="qJC-dg-SCb"/>
+                            <constraint firstItem="82x-ch-hax" firstAttribute="leading" secondItem="6hG-6F-gjJ" secondAttribute="leading" id="qZz-ws-Axv"/>
+                            <constraint firstItem="zMc-K7-siK" firstAttribute="top" secondItem="Nhl-Ni-TMP" secondAttribute="top" constant="5" id="tlv-cc-9wr"/>
+                            <constraint firstItem="Nhl-Ni-TMP" firstAttribute="leading" secondItem="82x-ch-hax" secondAttribute="trailing" constant="10" id="tos-I3-ZKx"/>
+                            <constraint firstItem="zMc-K7-siK" firstAttribute="height" secondItem="Nhl-Ni-TMP" secondAttribute="height" multiplier="0.4" id="unN-j2-SVE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="TomorrowTemprature" destination="Nhl-Ni-TMP" id="sxN-gi-zXL"/>
+                        <outlet property="cityName" destination="8OG-9Q-mN7" id="gCC-WZ-2a5"/>
+                        <outlet property="cityTemprature" destination="svu-fx-TLD" id="Z2a-8y-YGZ"/>
+                        <outlet property="tomorrowWetherImage" destination="82x-ch-hax" id="Q43-Dn-hPK"/>
+                        <outlet property="wetherImage" destination="q1f-KN-KbM" id="tJ9-b2-hxq"/>
+                        <outlet property="wetherType" destination="2eJ-rz-g2m" id="tf6-J1-zzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudy" width="64" height="64"/>
+    </resources>
+</document>
